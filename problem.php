@@ -58,6 +58,20 @@ class InverseFizzBuzz {
     }
 }
 
-$model = new InverseFizzBuzz(['fizz', 'buzz', 'fizz']);
-$d = $model->sequence();
-var_dump($d);
+
+$arr = [
+	['fizz'],
+	['buzz'],
+	['fizz', 'buzz'],
+	['buzz', 'fizz'],
+	['fizz', 'buzz', 'fizz'],
+	['fizz', 'fizz'],
+	['fizz', 'fizz', 'buzz']
+];
+
+foreach($arr as $item){
+	$model = new InverseFizzBuzz($item]);
+	$d = $model->sequence();
+	var_dump($d);
+}
+
