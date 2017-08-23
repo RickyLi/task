@@ -25,7 +25,7 @@ class InverseFizzBuzz {
 			$continue = false;
 			do {
 				++$value;
-				if ($value % $mapper[$this->list[$k]]) {
+				if ($value % $mapper[$this->list[$k]] != 0) {
 					$continue = true;
 				} else {
 					$continue = false;
@@ -38,7 +38,7 @@ class InverseFizzBuzz {
 	$max = count($this->list);
 	$res = [];
 	foreach ($results[0] as $key => $value) {
-		if ($results[$max][$key] > 100) continue;
+		if ($results[$max][$key] > 100) break;
 		$num = $results[$max][$key] - $value + 1;
 		$res[$key] = $num;
 	}
