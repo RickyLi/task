@@ -70,7 +70,7 @@ $arr = [
 ];
 
 foreach($arr as $item){
-	$model = new InverseFizzBuzz($item]);
+	$model = new InverseFizzBuzz($item);
 	$d = $model->sequence();
 	var_dump($d);
 }
