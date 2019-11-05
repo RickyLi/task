@@ -59,7 +59,6 @@ class InverseFizzBuzz {
     }
 }
 
-
 $arr = [
 	['fizz'],
 	['buzz'],
