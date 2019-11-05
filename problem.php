@@ -74,4 +74,3 @@ foreach($arr as $item){
 	$d = $model->sequence();
 	var_dump($d);
 }
-
